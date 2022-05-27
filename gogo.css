@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+.nature img {
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gameover{
+    align-self: center;
+    position: absolute;
+    top: 100px;
+    font-size: 25px;
+    left: 40%;
+    border: 2px solid yellowgreen;
+    display: none;
+    border-radius: 15px;
+    padding: 0 10px;
+}
+.bot{
+    position: absolute;
+    height: 100px;
+    width: 80px;
+    left: 80px;
+    bottom: 0;
+}
+.bot img{
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    /* left: 100px; */
+    bottom: 0;
+}
+.dino{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    right: 100px;
+    bottom: 0;
+}
+.dino img{
+    position: absolute;
+    height: 140px;
+    width: 140px;
+    right: 100px;
+    bottom: 0;
+    background-color: rgba(128, 255, 0, 0);
+}
+.animatebot {
+    animation: bot .8s linear;
+}
+.animatedino {
+    animation: dino 3s linear infinite;
+}
+@keyframes bot{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 430px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+@keyframes dino{
+    0%{
+        left: 100vw;
+    }
+    
+    100%{
+        left: -10px;
+    }
+}
+#scorecontainer{
+    position: absolute;
+    width: 240px;
+    height: 48px;
+    top: 47px;
+    right: 50px;
+    font-size: 25px;
+    background-color: #0124ca45;   
+}
+.img img
+{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    height: 55px;
+    width: 55px;
+    border: 2px solid white;
+    border-radius: 50px;
+}
